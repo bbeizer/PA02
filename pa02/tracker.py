@@ -97,18 +97,19 @@ def process_choice(choice):
         date = input("date to summarize transactions by: ")
         transac = transactions.select_by_date(date)
         print_transactions(transac)
-
     elif choice=='8':
-        print("8")
+        print("summarize transactions by month")
+        month = input("month to summarize transactions by: ")
+        transac = transactions.select_by_month(month)
+        print_transactions(transac)
     elif choice=='9':
-        print("9")
+        print("summarize transactions by year")
     elif choice=='10':
         print("10")
     elif choice=='11':
         print("choices menu: ", menu)
     else:
         print("choice",choice,"not yet implemented")
-
     choice = input("> ")
     return(choice)
 
