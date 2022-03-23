@@ -53,3 +53,12 @@ class Transaction:
         con.close()
         return last_rowid[0]
     
+    def select_by_date(self,date):
+        ''' return a category with a specified rowid '''
+        con= sqlite3.connect(self.dbfile)
+        cur = con.cursor()
+        cur.execute("SELECT date,* from transactions where date=(?)",(date,) )
+        tuples = cur.fetchall()
+        con.commit()
+        con.close()
+        return to_transaction_dict(tuples[0])

@@ -56,9 +56,6 @@ menu = '''
 11. print this menu
 '''
 
-
-
-
 def process_choice(choice):
 
     if choice=='0':
@@ -67,6 +64,7 @@ def process_choice(choice):
         cats = category.select_all()
         print_categories(cats)
     elif choice=='2':
+        print("add category")
         name = input("category name: ")
         desc = input("category description: ")
         cat = {'name':name, 'desc':desc}
@@ -95,7 +93,11 @@ def process_choice(choice):
         rowid = int(input("rowid: "))
         transactions.delete(rowid)
     elif choice=='7':
-        print("7")
+        print("summarize transactions by date")
+        date = input("date to summarize transactions by: ")
+        transac = transactions.select_by_date(date)
+        print_transactions(transac)
+
     elif choice=='8':
         print("8")
     elif choice=='9':
