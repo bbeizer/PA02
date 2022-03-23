@@ -24,9 +24,17 @@ class Transaction:
         ''' return all of the transactions as a list of dicts.'''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("SELECT rowid,* from ")
+        cur.execute("SELECT rowid,* from transactions")
         tuples = cur.fetchall()
         con.commit()
         con.close()
         return to_transaction_dict_list(tuples)
-        
+
+    def delete(self,rowid):
+        con= sqlite3.connect(self.dbfile)
+        cur = con.cursor()
+        cur.execute('''DELETE FROM transactions
+                       WHERE rowid=(?);
+        ''',(rowid,))
+        con.commit()
+        con.close()
