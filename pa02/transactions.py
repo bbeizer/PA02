@@ -1,13 +1,13 @@
 import sqlite3
 
-def to_cat_dict(transaction_tuple):
-    ''' cat is a category tuple (rowid, name, desc)'''
+def to_transaction_dict(transaction_tuple):
+    ''' transaction is a transaction tuple (item id#, amount, category, data, description) '''
     transaction = {'item #':transaction_tuple[0], 'amount':transaction_tuple[1], 'category':transaction_tuple[2], 'date':transaction_tuple[3], 'description': transaction_tuple[4]}
-    return cat
+    return transaction
 
-def to_cat_dict_list(cat_tuples):
-    ''' convert a list of category tuples into a list of dictionaries'''
-    return [to_cat_dict(cat) for cat in cat_tuples]
+def to_transaction_dict_list(transaction_tuples):
+    ''' convert a list of transaction tuples into a list of dictionaries'''
+    return [to_transaction_dict(transaction) for transaction in transaction_tuples]
 
 class Transaction:
 
@@ -28,5 +28,5 @@ class Transaction:
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        return to_cat_dict_list(tuples)
+        return to_transaction_dict_list(tuples)
         
