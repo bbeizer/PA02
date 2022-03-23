@@ -80,3 +80,12 @@ class Transaction:
         con.close()
         return to_transaction_dict(tuples[0])
 
+    def select_by_cat(self, cat):
+        con= sqlite3.connect(self.dbfile)
+        cur = con.cursor()
+        cur.execute("SELECT category,* from transactions where category = cat(?)" (cat,))
+        tuples = cur.fetchall()
+        con.commit()
+        con.close()
+        return to_transaction_dict(tuples[0])
+
