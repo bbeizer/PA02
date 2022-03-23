@@ -83,9 +83,17 @@ def process_choice(choice):
         trans = transactions.select_all()
         print_transactions(trans)
     elif choice=='5':
-        print("5")
+        print("add transaction")
+        amount = input("transaction amount: ")
+        cat = input("transaction category: ")
+        date = input("transaction date: ")
+        desc = input("transaction description: ")
+        transac = {'amount':amount, 'category':cat, 'date':date, 'desc': desc}
+        transactions.add(transac)
     elif choice=='6':
-        print("6")
+        print("delete transaction")
+        rowid = int(input("rowid: "))
+        transactions.delete(rowid)
     elif choice=='7':
         print("7")
     elif choice=='8':
@@ -95,7 +103,7 @@ def process_choice(choice):
     elif choice=='10':
         print("10")
     elif choice=='11':
-        print("11")
+        print("choices menu: ", menu)
     else:
         print("choice",choice,"not yet implemented")
 
