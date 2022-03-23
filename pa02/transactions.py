@@ -71,3 +71,12 @@ class Transaction:
         con.close()
         return to_transaction_dict(tuples[0])
 
+    def select_by_year(self, year):
+        con= sqlite3.connect(self.dbfile)
+        cur = con.cursor()
+        cur.execute("SELECT date,* from transactions where SUBSTRING(date, 1,4) = year(?)  AS ExtractString;",(year,))
+        tuples = cur.fetchall()
+        con.commit()
+        con.close()
+        return to_transaction_dict(tuples[0])
+
