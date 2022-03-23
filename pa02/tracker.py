@@ -80,7 +80,8 @@ def process_choice(choice):
         category.update(rowid,cat)
     elif choice=='4':
         print("show transactions")
-        print_transactions()
+        trans = transactions.select_all()
+        print_transactions(trans)
     elif choice=='5':
         print("5")
     elif choice=='6':
