@@ -83,7 +83,7 @@ class Transaction:
     def select_by_cat(self, cat):
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("SELECT category,* from transactions where category = cat(?)" (cat,))
+        cur.execute("SELECT category,* from transactions where category = cat(?)",(cat,))
         tuples = cur.fetchall()
         con.commit()
         con.close()
