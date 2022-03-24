@@ -1,21 +1,5 @@
-'''
-test_transegories runs unit and integration tests on the transegory module
-'''
-
-import pytest
+import pytest 
 from transactions import Transaction, to_transaction_dict
-
-@pytest.fixture
-def dbfile(tmpdir):
-    ''' create a database file in a temporary file system '''
-    return tmpdir.join('test_tracker.db')
-
-@pytest.fixture
-def empty_db(dbfile):
-    ''' create an empty database '''
-    db = Transaction(dbfile)
-    yield db
-
 
 @pytest.fixture
 def small_db(empty_db):

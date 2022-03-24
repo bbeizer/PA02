@@ -82,7 +82,7 @@ def process_choice(choice):
         print_transactions(trans)
     elif choice=='5':
         print("add transaction")
-        amount = input("transaction amount: ")
+        amount = int(input("transaction amount: "))
         cat = input("transaction category: ")
         date = input("transaction date: ")
         desc = input("transaction description: ")
@@ -90,28 +90,24 @@ def process_choice(choice):
         transactions.add(transac)
     elif choice=='6':
         print("delete transaction")
-        rowid = int(input("rowid: "))
+        rowid = int(input("rowid to delete: "))
         transactions.delete(rowid)
     elif choice=='7':
         print("summarize transactions by date")
-        date = input("date to summarize transactions by: ")
-        transac = transactions.select_by_date(date)
-        print_transactions(transac)
+        transac = transactions.summarize_by_date()
+        print_summarize_by(transac, 'date')
     elif choice=='8':
         print("summarize transactions by month")
-        month = input("month to summarize transactions by: ")
-        transac = transactions.select_by_month(month)
-        print_transactions(transac)
+        transac = transactions.summarize_by_month()
+        print_summarize_by(transac, 'month')
     elif choice=='9':
         print("summarize transactions by year")
-        year = input("year to summarize transacations by: ")
-        transac = transactions.select_by_year(year)
-        print_transactions(transac)
+        transac = transactions.summarize_by_year()
+        print_summarize_by(transac, 'year')
     elif choice=='10':
         print("summarize transactions by category")
-        cat = input("category to summarize transacations by: ")
-        transac = transactions.select_by_cat(cat)
-        print_transactions(transac)
+        transac = transactions.summarize_by_cat()
+        print_summarize_by(transac, 'category')
     elif choice=='11':
         print("choices menu: ", menu)
     else:
@@ -155,6 +151,13 @@ def print_categories(cats):
     print('-'*45)
     for cat in cats:
         print_category(cat)
+
+def print_summarize_by(items, col):
+    print("%-10s %-10s" % (col, 'total transaction'))
+    print('-' * 40)
+    for item in items:
+        values = tuple(item.values())
+        print("%-10d %-10d" % values)
 
 
 # here is the main call!

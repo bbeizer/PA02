@@ -45,7 +45,7 @@ class Transaction:
         '''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("INSERT INTO transactions VALUES(?,?)",(item['amount'], item['category'], item['date'], item['description']))
+        cur.execute("INSERT INTO transactions VALUES(?,?,?,?)",(item['amount'], item['category'], item['date'], item['description']))
         con.commit()
         cur.execute("SELECT last_insert_rowid()")
         last_rowid = cur.fetchone()
@@ -53,39 +53,47 @@ class Transaction:
         con.close()
         return last_rowid[0]
     
-    def select_by_date(self,date):
+    def summarize_by_date(self):
+        ''' summarizes transactions by date '''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("SELECT date,* from transactions where date=(?)",(date,) )
+        cur.execute('''SELECT date, SUM(amount) FROM transactions GROUP BY date''')
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        return to_transaction_dict(tuples[0])
+        result = {'date': tuples[0], 'total_transaction': tuples[1]}
+        return [result for tup in tuples]
     
-    def select_by_month(self, month):
+    def summarize_by_month(self):
+        ''' summarize transactions by month'''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("SELECT date,* from transactions where SUBSTRING(date, 5,2) = month(?)  AS ExtractString;",(month,))
+        cur.execute('''SELECT SUBSTRING(date, 5,2), SUM(amount) from transactions GROUPBY SUBSTRING(date, 5,2)''')
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        return to_transaction_dict(tuples[0])
+        result = {'date': tuples[0], 'total_transaction': tuples[1]}
+        return [result for tup in tuples]
 
-    def select_by_year(self, year):
+    def summarize_by_year(self):
+        '''summarizes transactions by year'''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("SELECT date,* from transactions where SUBSTRING(date, 1,4) = year(?)  AS ExtractString;",(year,))
+        cur.execute('''SELECT SUBSTRING(date, 1,4), SUM(amount) from transactions GROUPBY SUBSTRING(date, 1,4)''')
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        return to_transaction_dict(tuples[0])
+        result = {'date': tuples[0], 'total_transaction': tuples[1]}
+        return [result for tup in tuples]
 
-    def select_by_cat(self, cat):
+    def summarize_by_cat(self):
+        '''summarizes by category'''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("SELECT category,* from transactions where category = cat(?)",(cat,))
+        cur.execute('''SELECT category, SUM(amount) FROM transactions GROUP BY category''')
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        return to_transaction_dict(tuples[0])
+        result = {'category': tuples[0], 'total_transaction': tuples[1]}
+        return [result for tup in tuples]
 
