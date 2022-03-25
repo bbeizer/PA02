@@ -1,0 +1,315 @@
+Script started on Fri Mar 25 11:23:01 2022
+[1m[7m%[27m[1m[0m                                                                                                                                     
+ 
+
+[0m[27m[24m[J(base) Ben@Benjamins-MacBook-Air pa02 % [K[?2004h[7m 1115  clear[27m
+
+[7m 1116  git add .[27m[K
+
+[7m 1117  git commit -m "edits to test file"[27m[K
+
+[7m 1118  git push origin main[27m[K
+
+[7m 1119  clear[27m[K
+
+[7m 1120  pylint tracker.py[27m[K
+
+[7m 1121  pylint tracker.py[27m[K
+
+[7m 1122  CLEAR[27m[K
+
+[7m 1123  pylint tracker.py[27m[K
+
+[7m 1124  clear[27m[K
+
+[7m 1125  pylint tracker.py[27m[K
+
+[7m 1126  clear[27m[K
+
+[7m 1127  pytest -v[27m[K
+
+[7m 1128  clear[27m[K
+
+[7m 1129  pytest -v[27m[K
+
+[7m 1130  clear[27m[K[15A[28C[27m [27m1[27m1[27m1[27m5[27m [27m [27mc[27ml[27me[27ma[27mr[1B
+[27m [27m1[27m1[27m1[27m6[27m [27m [27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m.[1B
+[27m [27m1[27m1[27m1[27m7[27m [27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27me[27md[27mi[27mt[27ms[27m [27mt[27mo[27m [27mt[27me[27ms[27mt[27m [27mf[27mi[27ml[27me[27m"[1B
+[27m [27m1[27m1[27m1[27m8[27m [27m [27mg[27mi[27mt[27m [27mp[27mu[27ms[27mh[27m [27mo[27mr[27mi[27mg[27mi[27mn[27m [27mm[27ma[27mi[27mn[1B
+[27m [27m1[27m1[27m1[27m9[27m [27m [27mc[27ml[27me[27ma[27mr[1B
+[27m [27m1[27m1[27m2[27m0[27m [27m [27mp[27my[27ml[27mi[27mn[27mt[27m [27mt[27mr[27ma[27mc[27mk[27me[27mr[27m.[27mp[27my[1B
+[27m [27m1[27m1[27m2[27m1[27m [27m [27mp[27my[27ml[27mi[27mn[27mt[27m [27mt[27mr[27ma[27mc[27mk[27me[27mr[27m.[27mp[27my[1B
+[27m [27m1[27m1[27m2[27m2[27m [27m [27mC[27mL[27mE[27mA[27mR[1B
+[27m [27m1[27m1[27m2[27m3[27m [27m [27mp[27my[27ml[27mi[27mn[27mt[27m [27mt[27mr[27ma[27mc[27mk[27me[27mr[27m.[27mp[27my[1B
+[27m [27m1[27m1[27m2[27m4[27m [27m [27mc[27ml[27me[27ma[27mr[1B
+[27m [27m1[27m1[27m2[27m5[27m [27m [27mp[27my[27ml[27mi[27mn[27mt[27m [27mt[27mr[27ma[27mc[27mk[27me[27mr[27m.[27mp[27my[1B
+[27m [27m1[27m1[27m2[27m6[27m [27m [27mc[27ml[27me[27ma[27mr[1B
+[27m [27m1[27m1[27m2[27m7[27m [27m [27mp[27my[27mt[27me[27ms[27mt[27m [27m-[27mv[1B
+[27m [27m1[27m1[27m2[27m8[27m [27m [27mc[27ml[27me[27ma[27mr[1B
+[27m [27m1[27m1[27m2[27m9[27m [27m [27mp[27my[27mt[27me[27ms[27mt[27m [27m-[27mv[1B
+[27m [27m1[27m1[27m3[27m0[27m [27m [27mc[27ml[27me[27ma[27mr  clear [8D  clear [8D  clear [8D
+   clear [8D[1Cclear 
+[A[16C  clear[1B
+[K[A[16C [P[17C [19D [P[17C [19D [P[17C [19D
+  [P[17C [19D[1C[P[16C 
+[A[12C  pytest -v  clear[1B
+[K[A[12C [P[24C [26D [P[24C [26D [P[24C [26D
+  [P[24C [26D[1C[P[23C 
+[A[16C  clear  pytest -v  clear[1B
+[K[A[16C [P[35C [37D [P[35C [37D [P[35C [37D
+  [P[35C [37D[1C[P[34C 
+[A[12C  pytest -v  clear  pytest -v  clear[1B
+[K[A[12C [P[42C [44D [P[42C [44D [P[42C [44D
+  [P[42C [44D[1C[P[41C 
+[A[24C  clear  pytest -v  clear  pytest -v  clear[1B
+[K[A[24C[1C [P[61C [63D [P[61C [63D [P[61C [63D
+  [P[61C [63D[1C[P[60C 
+[A[12C  pylint tracker.py  clear  pytest -v  clear  pytest -v  clear[1B
+[K[A[12C [P[68C [70D [P[68C [70D [P[68C [70D
+  [P[68C [70D[1C[P[67C 
+[A[24C  clear  pylint tracker.py  clear  pytest -v  clear  pytest -v  clear[1B
+[K[A[24C [P[87C [89D [P[87C [89D [P[87C [89D
+  [P[87C [89D[1C[P[86C 
+[A[12C  pylint tracker.py  clear  pylint tracker.py  clear  pytest -v  clear  pytest -v  clear[1B
+[K[A[12C [P[94C [96D [P[94C [96D [P[94C [96D
+  [P[94C [96D[1C[P[93C 
+[A[24C  CLEAR  pylint tracker.py  clear  pylint tracker.py  clear  pytest -v  clear  pytest -v  clear[1B
+[K[A[24C[1C [P[113C [115D [P[113C [115D [P[113C [115D
+  [P[113C [115D[1C[P[112C 
+[A[24C  pylint tracker.py  CLEAR  pylint tracker.py  clear  pylint tracker.py  clear  pytest -v  clear  pytest -v  clear               [2C     [2C                 [2C     [2C                 [2C     [2C         [2C     [2C         [2C     [A[90D [P[128Clear [A [P[129Cear [A [P[130Car [A
+  [P[131Cr [K[A[1C[P[131C[K[1B
+[K[A[A[12C  pylint tracker.py  pylint tracker.py  CLEAR  pylint tracker.py  clear  pylint tracker.py  clear  pytest -v  clear  pytest[104P[12C         [2C                                                                                                             [A[121D [P[128Ct [P[9C [A [P[129C -v  clear [A [P[130C-v  clear [A
+  [P[131Cv  clear [A[1C[P[131C  clear [A
+[A[27C  clear  pylint tracker.py  pylint tracker.py  CLEAR  pylint tracker.py  clear  pylint tracker.py  clear  py[107P[26C clear[K[1B
+[K[A[A[27C[1C [P[128Cyt[P[31C [A[29D [P[129Cte[P[30C [A[29D [P[130Ces[P[29C [A[29D
+  [P[131Cst[P[28C [A[29D[1C[P[131Ct [P[27C [A
+[A[41C  git push origin main  clear  pylint tracker.py  pylint tracker.py  CLEAR  pylint tracker.py [22P[27C[45P[9Ctes[2C-v[8P[15C -v  clear[K[1B
+[K[A[A[41C [P[128C  [P[67C [A[65D [P[129C c[P[66C [A[65D [P[130Ccl[P[65C [A[65D
+  [P[131Cle[P[64C [A[65D[1C[P[131Cea[P[63C [A
+[A[16C  git commit -m "edits to test file"  git push origin main  clear  pylint tracker.py  pylint tracker.py  CLEAR  pylint [73P[12Cclear [19P[23Car  pytest -v  clear  pytest -v  clear[K[1B
+[K[A[A[16C [P[128C t[P[78C [A[76D [P[129Ctr[P[77C [A[76D [P[130Cra[P[76C [A[76D
+  [P[131Cac[P[75C [A[76D[1C[P[131Cck[P[74C [A
+[A[52C  git add .  git commit -m "edits to test file"  git push origin main  clear  pylin[82P[51Cker.py  clear  pylint tracker.py  clear  pytest -v  clear  pytest -v  clear[K[1B
+[K[A[A[52C[1C [P[88Cnt[P[125C [A[83D [P[89Ct [P[124C [A[83D [P[90C t[P[123C [A[83D  [P[91Ctr[P[122C [A[83D[1C[P[91Cra[P[121C [A[83D[1C[1C[P[93Cac[P[120C [A[81D[P[93Cck[P[119C [A[81D[1C[1C[1C[1C[1C;  git add .  git commit -m "edits to test file"  git push origin main  clear  pylint tracker.py[25P[21CCLEAR[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[A[75D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;  git commit -m "edits to test file"  git push origin main  clear  pylint tra[18P[9C[7P[19CCLEAR[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[A[64D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;  git push origin main  clear  pylint tr[18P[10C[7P[19CCLEAR[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[A[28D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;  clear  pylint t[18P[11C[7P[19CCLEAR[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[A[1C[1C[1C[1C[1C[1C[1C;  pylint [18P[12C[7P[19CCLEAR[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[A[1C[1C[1C[1C[1C[1C[1C[1C[1B
+[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;[25P[21CCLEAR[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[114D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;  CLEAR[25P[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[95D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;[25P[30Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[88D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;[25P[11Clin[2Ctracker.py  clear  pytest -v  clear  pytest -v  clear[69D[1C[1C[1C[1C[1C[1C[1C;  pylint tracker.py[17P[25C  pytest -v  clear[62D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;[17P[25C  pytest -v  clear[43D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;[17P[18C  pytest -v  clear[36D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;  clear  pytest -v  clear[25D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;  pytest -v  clear 
+[K[A[116C[1B
+[K[A[117C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C;  clear[A[127C[1C[1C[1C[1C[1C[1B
+[1C
+r;[?2004l[1B
+[H[2J[main ff14f95] edits to test file
+ 3 files changed, 31 insertions(+), 18 deletions(-)
+ create mode 100644 pa02/typescript
+To https://github.com/bbeizer/PA02.git
+ [31m! [rejected]       [m main -> main (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/bbeizer/PA02.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+[H[2J************* Module tracker
+tracker.py:26:61: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:55:0: C0301: Line too long (109/100) (line-too-long)
+tracker.py:137:37: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:162:0: C0305: Trailing newlines (trailing-newlines)
+tracker.py:56:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+tracker.py:54:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+tracker.py:54:0: R0912: Too many branches (13/12) (too-many-branches)
+tracker.py:54:0: R0915: Too many statements (55/50) (too-many-statements)
+
+------------------------------------------------------------------
+Your code has been rated at 9.12/10 (previous run: 9.12/10, +0.00)
+
+[0m************* Module tracker
+tracker.py:26:61: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:55:0: C0301: Line too long (109/100) (line-too-long)
+tracker.py:137:37: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:162:0: C0305: Trailing newlines (trailing-newlines)
+tracker.py:56:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+tracker.py:54:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+tracker.py:54:0: R0912: Too many branches (13/12) (too-many-branches)
+tracker.py:54:0: R0915: Too many statements (55/50) (too-many-statements)
+
+------------------------------------------------------------------
+Your code has been rated at 9.12/10 (previous run: 9.12/10, +0.00)
+
+[0m[H[2J************* Module tracker
+tracker.py:26:61: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:55:0: C0301: Line too long (109/100) (line-too-long)
+tracker.py:137:37: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:162:0: C0305: Trailing newlines (trailing-newlines)
+tracker.py:56:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+tracker.py:54:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+tracker.py:54:0: R0912: Too many branches (13/12) (too-many-branches)
+tracker.py:54:0: R0915: Too many statements (55/50) (too-many-statements)
+
+------------------------------------------------------------------
+Your code has been rated at 9.12/10 (previous run: 9.12/10, +0.00)
+
+[0m[H[2J************* Module tracker
+tracker.py:26:61: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:55:0: C0301: Line too long (109/100) (line-too-long)
+tracker.py:137:37: C0303: Trailing whitespace (trailing-whitespace)
+tracker.py:162:0: C0305: Trailing newlines (trailing-newlines)
+tracker.py:56:4: R1705: Unnecessary "elif" after "return" (no-else-return)
+tracker.py:54:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+tracker.py:54:0: R0912: Too many branches (13/12) (too-many-branches)
+tracker.py:54:0: R0915: Too many statements (55/50) (too-many-statements)
+
+------------------------------------------------------------------
+Your code has been rated at 9.12/10 (previous run: 9.12/10, +0.00)
+
+[0m[H[2J[1m======================================================== test session starts =========================================================[0m
+platform darwin -- Python 3.8.8, pytest-6.2.3, py-1.10.0, pluggy-0.13.1 -- /Users/Ben/opt/anaconda3/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/Ben/PA02/pa02, configfile: pytest.ini
+plugins: anyio-2.2.0
+[1mcollecting ... [0m[1m
+collected 8 items                                                                                                                    [0m
+
+test_category.py::test_to_cat_dict [32mPASSED[0m[32m                                                                                      [ 12%][0m
+test_category.py::test_add [32mPASSED[0m[32m                                                                                              [ 25%][0m
+test_category.py::test_delete [32mPASSED[0m[32m                                                                                           [ 37%][0m
+test_category.py::test_update [32mPASSED[0m[32m                                                                                           [ 50%][0m
+test_transaction.py::test_to_trans_dict [32mPASSED[0m[32m                                                                                 [ 62%][0m
+test_transaction.py::test_delete [32mPASSED[0m[32m                                                                                        [ 75%][0m
+test_transaction.py::test_summarize_by_date [31mFAILED[0m[31m                                                                             [ 87%][0m
+test_transaction.py::test_add [31mFAILED[0m[31m                                                                                           [100%][0m
+
+============================================================== FAILURES ==============================================================
+[31m[1m_______________________________________________________ test_summarize_by_date _______________________________________________________[0m
+
+med_db = <transactions.Transaction object at 0x7fd4b57ffb50>
+
+    [37m@pytest[39;49;00m.mark.update
+    [94mdef[39;49;00m [92mtest_summarize_by_date[39;49;00m(med_db):
+    
+        [90m# then we add this transegory to the table and get the new list of rows[39;49;00m
+        trans0 = {[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33mtesting_add[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33msee if it works[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33m19991203[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33mthis is a description[39;49;00m[33m'[39;49;00m
+                }
+        rowid = med_db.add(trans0)
+    
+        [90m# now we upate the transegory[39;49;00m
+        trans1 = {[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33mtesting_add[39;49;00m[33m'[39;49;00m,[33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33msee if it works[39;49;00m[33m'[39;49;00m,[33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33m19990421[39;49;00m[33m'[39;49;00m,[33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m:[33m"[39;49;00m[33mthis is a description[39;49;00m[33m"[39;49;00m}
+>       med_db.update(rowid,trans1)
+[1m[31mE       AttributeError: 'Transaction' object has no attribute 'update'[0m
+
+[1m[31mtest_transaction.py[0m:116: AttributeError
+[31m[1m______________________________________________________________ test_add ______________________________________________________________[0m
+
+med_db = <transactions.Transaction object at 0x7fd4b57fffa0>
+
+    [94mdef[39;49;00m [92mtest_add[39;49;00m(med_db):
+        [33m''' add a transaction to db, then select it, then delete it'''[39;49;00m
+    
+        trans0 = {[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33mtesting add[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33msee if it works[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33m19991203[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33mthis is a description[39;49;00m[33m'[39;49;00m
+                }
+        trans0 = med_db.select_all()
+>       rowid = med_db.add(trans0)
+
+[1m[31mtest_transaction.py[0m:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <transactions.Transaction object at 0x7fd4b57fffa0>
+item = [{'amount': '25', 'category': 'food', 'date': '20170120', 'description': 'groceries and takeout', ...}, {'amount': '63...escription': 'desc1', ...}, {'amount': 'amnt2', 'category': 'cat2', 'date': 'date2', 'description': 'desc2', ...}, ...]
+
+    [94mdef[39;49;00m [92madd[39;49;00m([96mself[39;49;00m,item):
+        [33m''' add a transaction to the transactions table.[39;49;00m
+    [33m        this returns the rowid of the inserted element[39;49;00m
+    [33m    '''[39;49;00m
+        con= sqlite3.connect([96mself[39;49;00m.dbfile)
+        cur = con.cursor()
+>       cur.execute([33m"[39;49;00m[33mINSERT INTO transactions VALUES(?,?,?,?)[39;49;00m[33m"[39;49;00m,(item[[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m], item[[33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m], item[[33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m], item[[33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m]))
+[1m[31mE       TypeError: list indices must be integers or slices, not str[0m
+
+[1m[31mtransactions.py[0m:48: TypeError
+====================================================== short test summary info =======================================================
+FAILED test_transaction.py::test_summarize_by_date - AttributeError: 'Transaction' object has no attribute 'update'
+FAILED test_transaction.py::test_add - TypeError: list indices must be integers or slices, not str
+[31m==================================================== [31m[1m2 failed[0m, [32m6 passed[0m[31m in 0.44s[0m[31m =====================================================[0m
+[H[2J[1m======================================================== test session starts =========================================================[0m
+platform darwin -- Python 3.8.8, pytest-6.2.3, py-1.10.0, pluggy-0.13.1 -- /Users/Ben/opt/anaconda3/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/Ben/PA02/pa02, configfile: pytest.ini
+plugins: anyio-2.2.0
+[1mcollecting ... [0m[1m
+collected 8 items                                                                                                                    [0m
+
+test_category.py::test_to_cat_dict [32mPASSED[0m[32m                                                                                      [ 12%][0m
+test_category.py::test_add [32mPASSED[0m[32m                                                                                              [ 25%][0m
+test_category.py::test_delete [32mPASSED[0m[32m                                                                                           [ 37%][0m
+test_category.py::test_update [32mPASSED[0m[32m                                                                                           [ 50%][0m
+test_transaction.py::test_to_trans_dict [32mPASSED[0m[32m                                                                                 [ 62%][0m
+test_transaction.py::test_delete [32mPASSED[0m[32m                                                                                        [ 75%][0m
+test_transaction.py::test_summarize_by_date [31mFAILED[0m[31m                                                                             [ 87%][0m
+test_transaction.py::test_add [31mFAILED[0m[31m                                                                                           [100%][0m
+
+============================================================== FAILURES ==============================================================
+[31m[1m_______________________________________________________ test_summarize_by_date _______________________________________________________[0m
+
+med_db = <transactions.Transaction object at 0x7f8b3e6f0b80>
+
+    [37m@pytest[39;49;00m.mark.update
+    [94mdef[39;49;00m [92mtest_summarize_by_date[39;49;00m(med_db):
+    
+        [90m# then we add this transegory to the table and get the new list of rows[39;49;00m
+        trans0 = {[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33mtesting_add[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33msee if it works[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33m19991203[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33mthis is a description[39;49;00m[33m'[39;49;00m
+                }
+        rowid = med_db.add(trans0)
+    
+        [90m# now we upate the transegory[39;49;00m
+        trans1 = {[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33mtesting_add[39;49;00m[33m'[39;49;00m,[33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33msee if it works[39;49;00m[33m'[39;49;00m,[33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33m19990421[39;49;00m[33m'[39;49;00m,[33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m:[33m"[39;49;00m[33mthis is a description[39;49;00m[33m"[39;49;00m}
+>       med_db.update(rowid,trans1)
+[1m[31mE       AttributeError: 'Transaction' object has no attribute 'update'[0m
+
+[1m[31mtest_transaction.py[0m:116: AttributeError
+[31m[1m______________________________________________________________ test_add ______________________________________________________________[0m
+
+med_db = <transactions.Transaction object at 0x7f8b3e6f0fd0>
+
+    [94mdef[39;49;00m [92mtest_add[39;49;00m(med_db):
+        [33m''' add a transaction to db, then select it, then delete it'''[39;49;00m
+    
+        trans0 = {[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33mtesting add[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33msee if it works[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m:[33m'[39;49;00m[33m19991203[39;49;00m[33m'[39;49;00m,
+                [33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m: [33m'[39;49;00m[33mthis is a description[39;49;00m[33m'[39;49;00m
+                }
+        trans0 = med_db.select_all()
+>       rowid = med_db.add(trans0)
+
+[1m[31mtest_transaction.py[0m:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <transactions.Transaction object at 0x7f8b3e6f0fd0>
+item = [{'amount': '25', 'category': 'food', 'date': '20170120', 'description': 'groceries and takeout', ...}, {'amount': '63...escription': 'desc1', ...}, {'amount': 'amnt2', 'category': 'cat2', 'date': 'date2', 'description': 'desc2', ...}, ...]
+
+    [94mdef[39;49;00m [92madd[39;49;00m([96mself[39;49;00m,item):
+        [33m''' add a transaction to the transactions table.[39;49;00m
+    [33m        this returns the rowid of the inserted element[39;49;00m
+    [33m    '''[39;49;00m
+        con= sqlite3.connect([96mself[39;49;00m.dbfile)
+        cur = con.cursor()
+>       cur.execute([33m"[39;49;00m[33mINSERT INTO transactions VALUES(?,?,?,?)[39;49;00m[33m"[39;49;00m,(item[[33m'[39;49;00m[33mamount[39;49;00m[33m'[39;49;00m], item[[33m'[39;49;00m[33mcategory[39;49;00m[33m'[39;49;00m], item[[33m'[39;49;00m[33mdate[39;49;00m[33m'[39;49;00m], item[[33m'[39;49;00m[33mdescription[39;49;00m[33m'[39;49;00m]))
+[1m[31mE       TypeError: list indices must be integers or slices, not str[0m
+
+[1m[31mtransactions.py[0m:48: TypeError
+====================================================== short test summary info =======================================================
+FAILED test_transaction.py::test_summarize_by_date - AttributeError: 'Transaction' object has no attribute 'update'
+FAILED test_transaction.py::test_add - TypeError: list indices must be integers or slices, not str
+[31m==================================================== [31m[1m2 failed[0m, [32m6 passed[0m[31m in 0.42s[0m[31m =====================================================[0m
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                                     
+ 
+
+[0m[27m[24m[J(base) Ben@Benjamins-MacBook-Air pa02 % [K[?2004heexit[?2004l
+
+
+Script done on Fri Mar 25 11:26:10 2022
