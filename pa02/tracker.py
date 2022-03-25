@@ -21,19 +21,14 @@ to Python Dictionaries as follows:
 Likewise, the ORM, Transaction will mirror the database with
 columns:
 amount, category, date (yyyymmdd), description
-
 In place of SQL queries, we will have method calls.
-
 This app will store the data in a SQLite database ~/tracker.db
-
 Note the actual implementation of the ORM is hidden and so it 
 could be replaced with PostgreSQL or Pandas or straight python lists
-
 '''
 
 from transactions import Transaction
 from category import Category
-import sys
 
 transactions = Transaction('tracker.db')
 category = Category('tracker.db')
@@ -41,7 +36,7 @@ category = Category('tracker.db')
 
 # here is the menu for the tracker app
 
-menu = '''
+MENU = '''
 0. quit
 1. show categories
 2. add category
@@ -57,7 +52,7 @@ menu = '''
 '''
 
 def process_choice(choice):
-
+    '''code for taking user input and allowing user to play around with category and transaction functions'''
     if choice=='0':
         return
     elif choice=='1':
@@ -109,18 +104,17 @@ def process_choice(choice):
         transac = transactions.summarize_by_cat()
         print_summarize_by(transac, 'category')
     elif choice=='11':
-        print("choices menu: ", menu)
+        print("choices menu: ", MENU)
     else:
         print("choice",choice,"not yet implemented")
     choice = input("> ")
-    return(choice)
+    return choice
 
 
 def toplevel():
     ''' handle the user's choice '''
 
-    ''' read the command args and process them'''
-    print(menu)
+    print(MENU)
     choice = input("> ")
     while choice !='0' :
         choice = process_choice(choice)
@@ -136,7 +130,7 @@ def print_transactions(items):
         print('no items to print')
         return
     print('\n')
-    print("%-10s %-10d %-10s %-10d %-30s"%(
+    print("%-10s %-10s %-10s %-10s %-30s"%(
         'item #','amount','category','date','description'))
     print('-'*40)
     for item in items:
@@ -144,15 +138,18 @@ def print_transactions(items):
         print("%-10s %-10d %-10s %-10d %-30s"%values)
 
 def print_category(cat):
+    '''prints a category'''
     print("%-3d %-10s %-30s"%(cat['rowid'],cat['name'],cat['desc']))
 
 def print_categories(cats):
+    '''Helper method to print categories'''
     print("%-3s %-10s %-30s"%("id","name","description"))
     print('-'*45)
     for cat in cats:
         print_category(cat)
 
 def print_summarize_by(items, col):
+    '''Prints summarize by methods'''
     print("%-10s %-10s" % (col, 'total transaction'))
     print('-' * 40)
     for item in items:
@@ -161,6 +158,5 @@ def print_summarize_by(items, col):
 
 
 # here is the main call!
-
 toplevel()
 

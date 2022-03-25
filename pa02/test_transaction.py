@@ -112,15 +112,15 @@ def test_summarize_by_date(med_db):
     rowid = med_db.add(trans0)
 
     # now we upate the transegory
-    trans1 = {'amount':'5','category':'cats','date':'19990421','description':"this is a description"}
+    trans1 = {'amount':'testing_add','category':'see if it works','date':'19990421','description':"this is a description"}
     med_db.update(rowid,trans1)
 
     # now we retrieve the transegory and check that it has changed
     trans2 = med_db.select_one(rowid)
-    assert trans1['amount']==trans2['amount']
-    assert trans1['category']==trans2['category']
-    assert trans1['date']==trans2['date']  
-    assert trans1['description']==trans2['description']  
+    assert trans0['amount']==trans1['amount']
+    assert trans0['category']==trans1['category']
+    assert trans0['date']==trans1['date']  
+    assert trans0['description']==trans1['description']  
 
 
 def test_add(med_db):
