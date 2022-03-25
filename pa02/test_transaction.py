@@ -112,7 +112,7 @@ def test_summarize_by_date(med_db):
     rowid = med_db.add(trans0)
 
     # now we upate the transegory
-    trans1 = {'name':'new trans','desc':'new desc'}
+    trans1 = {'amount':'5','category':'cats','date':'19990421','description':"this is a description"}
     med_db.update(rowid,trans1)
 
     # now we retrieve the transegory and check that it has changed
