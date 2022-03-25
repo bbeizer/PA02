@@ -100,8 +100,8 @@ def test_delete(med_db):
     assert len(transactions0)==len(transactions2)
     assert len(transactions2) == len(transactions1)-1
 
-# @pytest.mark.update
-# def test_summarize_by_date(med_db):
+@pytest.mark.update
+def test_summarize_by_date(med_db):
 
     # then we add this transegory to the table and get the new list of rows
     trans0 = {'amount':'testing_add',
