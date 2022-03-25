@@ -2,6 +2,17 @@ import pytest
 from transactions import Transaction, to_transaction_dict
 
 @pytest.fixture
+def dbfile(tmpdir):
+    ''' create a database file in a temporary file system '''
+    return tmpdir.join('test_tracker.db')
+
+@pytest.fixture
+def empty_db(dbfile):
+    ''' create an empty database '''
+    db = Transaction(dbfile)
+    yield db
+
+@pytest.fixture
 def small_db(empty_db):
     ''' create a small database, and tear it down later'''
     trans1 = {'amount': '25', 'category':'food', 'date': '20170120',  'desc':'groceries and takeout'}
