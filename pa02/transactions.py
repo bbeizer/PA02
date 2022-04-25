@@ -1,7 +1,7 @@
 import sqlite3
 
 def to_transaction_dict(transaction_tuple):
-    ''' transaction is a transaction tuple (item_id, amount, category, data, description) '''
+    ''' transaction is a transaction tuple (item_id, amount, category, date, description) '''
     transaction = {'rowid':transaction_tuple[0], 'amount':transaction_tuple[1], 'category':transaction_tuple[2], 'date':transaction_tuple[3], 'desc': transaction_tuple[4]}
     return transaction
 
@@ -15,7 +15,7 @@ class Transaction:
         con= sqlite3.connect(dbfile)
         cur = con.cursor()
         cur.execute('''CREATE TABLE IF NOT EXISTS transactions
-                    (amount text, category text, data text, desc text)''')
+                    (amount text, category text, date text, desc text)''')
         con.commit()
         con.close()
         self.dbfile = dbfile
