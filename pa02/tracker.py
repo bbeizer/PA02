@@ -135,7 +135,7 @@ def print_transactions(items):
     print('-'*40)
     for item in items:
         values = tuple(item.values()) 
-        print("%-10s %-10d %-10s %-10d %-30s"%values)
+        print("%-10s %-10s %-10s %-10s %-30s"%values)
 
 def print_category(cat):
     '''prints a category'''
