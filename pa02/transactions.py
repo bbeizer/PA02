@@ -53,16 +53,16 @@ class Transaction:
         con.close()
         return last_rowid[0]
     
-    def summarize_by_date(self):
+    def summarize_by_date(self, date):
         ''' summarizes transactions by date '''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute('''SELECT date, SUM(amount) FROM transactions GROUP BY date''')
+        cur.execute("SELECT DISTINCT rowid,* FROM transactions WHERE date=(?)",(date,))
         tuples = cur.fetchall()
         con.commit()
         con.close()
         result = {'date': tuples[0], 'total_transaction': tuples[1]}
-        return [result for tup in tuples]
+        return [b for b in tuples ]
     
     def summarize_by_month(self):
         ''' summarize transactions by month'''
@@ -72,8 +72,10 @@ class Transaction:
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        result = {'date': tuples[0], 'total_transaction': tuples[1]}
-        return [result for tup in tuples]
+        result = []
+        for t in tuples:
+            result.append([t[3], t])
+        return result
 
     def summarize_by_year(self):
         '''summarizes transactions by year'''

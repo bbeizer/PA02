@@ -89,7 +89,8 @@ def process_choice(choice):
         transactions.delete(rowid)
     elif choice=='7':
         print("summarize transactions by date")
-        transac = transactions.summarize_by_date()
+        date = input("input date yyyymmdd: ")
+        transac = transactions.summarize_by_date(date)
         print_summarize_by(transac, 'date')
     elif choice=='8':
         print("summarize transactions by month")
@@ -153,8 +154,9 @@ def print_summarize_by(items, col):
     print("%-10s %-10s" % (col, 'total transaction'))
     print('-' * 40)
     for item in items:
-        values = tuple(item.values())
-        print("%-10d %-10d" % values)
+        a = item[3]
+        b = "amount: " +item[1] +"     " + "category: " + item[2] + "     " + "description: "+ item[4]
+        print("%-10s %-10s"% (a, b))
 
 
 # here is the main call!
