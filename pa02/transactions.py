@@ -15,7 +15,7 @@ class Transaction:
         con= sqlite3.connect(dbfile)
         cur = con.cursor()
         cur.execute('''CREATE TABLE IF NOT EXISTS transactions
-                    (amount text, category text, data text, description text)''')
+                    (amount text, category text, data text, desc text)''')
         con.commit()
         con.close()
         self.dbfile = dbfile
@@ -45,7 +45,7 @@ class Transaction:
         '''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute("INSERT INTO transactions VALUES(?,?,?,?)",(item['amount'], item['category'], item['date'], item['description']))
+        cur.execute("INSERT INTO transactions VALUES(?,?,?,?)",(item['amount'], item['category'], item['date'], item['desc']))
         con.commit()
         cur.execute("SELECT last_insert_rowid()")
         last_rowid = cur.fetchone()
