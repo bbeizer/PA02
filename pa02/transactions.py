@@ -2,7 +2,7 @@ import sqlite3
 
 def to_transaction_dict(transaction_tuple):
     ''' transaction is a transaction tuple (item_id, amount, category, data, description) '''
-    transaction = {'rowid':transaction_tuple[0], 'amount':transaction_tuple[1], 'category':transaction_tuple[2], 'date':transaction_tuple[3], 'description': transaction_tuple[4]}
+    transaction = {'rowid':transaction_tuple[0], 'amount':transaction_tuple[1], 'category':transaction_tuple[2], 'date':transaction_tuple[3], 'desc': transaction_tuple[4]}
     return transaction
 
 def to_transaction_dict_list(transaction_tuples):
