@@ -226,7 +226,7 @@ transaction description: I bought an OBSCENE amount of cats on this day
 show transactions
 
 
-item #     amount     category   date       description                   
+item number     amount     category   date       description                   
 ----------------------------------------
 1          5000       cats       19991203   I bought a ton of cats        
 2          30         food       20000303   I bought an expensive meatball sub on this dates
@@ -241,7 +241,7 @@ rowid to delete: 4
 show transactions
 
 
-item #     amount     category   date       description                   
+item number     amount     category   date       description                   
 ----------------------------------------
 1          5000       cats       19991203   I bought a ton of cats        
 2          30         food       20000303   I bought an expensive meatball sub on this dates
