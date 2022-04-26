@@ -65,7 +65,7 @@ __________________________________________________________________ ERROR at setu
 
 empty_db = <transactions.Transaction object at 0x7f8a687edac0>
 
-    @pytest.fixture
+    pytest.fixture
     def small_db(empty_db):
         ''' create a small database, and tear it down later'''
         trans1 = {'amount': '25', 'category':'food', 'date': '20170120',  'description':'groceries and takeout'}
