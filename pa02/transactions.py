@@ -61,41 +61,35 @@ class Transaction:
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        result = {'date': tuples[0], 'total_transaction': tuples[1]}
-        return [b for b in tuples ]
+        return tuples
     
-    def summarize_by_month(self):
+    def summarize_by_month(self, month):
         ''' summarize transactions by month'''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute('''SELECT SUBSTRING(date, 5,2), SUM(amount) from transactions GROUPBY SUBSTRING(date, 5,2)''')
+        cur.execute("SELECT rowid,* FROM transactions WHERE SUBSTRING(date, 5,2)=(?)",(month,))
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        result = []
-        for t in tuples:
-            result.append([t[3], t])
-        return result
+        return tuples
 
-    def summarize_by_year(self):
+    def summarize_by_year(self, year):
         '''summarizes transactions by year'''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute('''SELECT SUBSTRING(date, 1,4), SUM(amount) from transactions GROUPBY SUBSTRING(date, 1,4)''')
+        cur.execute("SELECT rowid,* FROM transactions WHERE SUBSTRING(date, 1,4)=(?)",(year,))
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        result = {'date': tuples[0], 'total_transaction': tuples[1]}
-        return [result for tup in tuples]
+        return tuples
 
-    def summarize_by_cat(self):
+    def summarize_by_cat(self, cat):
         '''summarizes by category'''
         con= sqlite3.connect(self.dbfile)
         cur = con.cursor()
-        cur.execute('''SELECT category, SUM(amount) FROM transactions GROUP BY category''')
+        cur.execute("SELECT rowid,* FROM transactions WHERE category=(?)", (cat,))
         tuples = cur.fetchall()
         con.commit()
         con.close()
-        result = {'category': tuples[0], 'total_transaction': tuples[1]}
-        return [result for tup in tuples]
+        return tuples
 

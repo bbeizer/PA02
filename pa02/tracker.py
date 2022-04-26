@@ -89,21 +89,24 @@ def process_choice(choice):
         transactions.delete(rowid)
     elif choice=='7':
         print("summarize transactions by date")
-        date = input("input date yyyymmdd: ")
+        date = input("enter date yyyymmdd: ")
         transac = transactions.summarize_by_date(date)
-        print_summarize_by(transac, 'date')
+        print_summarize_by(transac, 'date', date)
     elif choice=='8':
         print("summarize transactions by month")
-        transac = transactions.summarize_by_month()
-        print_summarize_by(transac, 'month')
+        month = input("enter month E.g 'mm': ")
+        transac = transactions.summarize_by_month(month)
+        print_summarize_by(transac, 'month', month)
     elif choice=='9':
         print("summarize transactions by year")
-        transac = transactions.summarize_by_year()
-        print_summarize_by(transac, 'year')
+        year = input("enter year E.g 'yyyy': ")
+        transac = transactions.summarize_by_year(year)
+        print_summarize_by(transac, 'year', year)
     elif choice=='10':
         print("summarize transactions by category")
-        transac = transactions.summarize_by_cat()
-        print_summarize_by(transac, 'category')
+        cat = input("enter the category: ")
+        transac = transactions.summarize_by_cat(cat)
+        print_summarize_by(transac, 'category', cat)
     elif choice=='11':
         print("choices menu: ", MENU)
     else:
@@ -149,14 +152,26 @@ def print_categories(cats):
     for cat in cats:
         print_category(cat)
 
-def print_summarize_by(items, col):
+def print_summarize_by(items, col, var):
     '''Prints summarize by methods'''
     print("%-10s %-10s" % (col, 'total transaction'))
     print('-' * 40)
-    for item in items:
-        a = item[3]
-        b = "amount: " +item[1] +"     " + "category: " + item[2] + "     " + "description: "+ item[4]
-        print("%-10s %-10s"% (a, b))
+    if col != 'category':
+        for item in items:
+            s1 ="amount: " + item[1] + "   "
+            s2 ="category: " + item[2] + "   "
+            s3 ="description: " + item[4] + "   "
+            print("%-10s %-10s %-10s %-10s"% (var, s1,s2,s3))
+    else:
+        for item in items:
+            s1 ="amount: " + item[1] + "   "
+            s2 ="date: " + item[3] + "   "
+            s3 ="description: " + item[4] + "   "
+            print("%-10s %-10s %-10s %-10s"% (var, s1,s2,s3))
+
+
+
+
 
 
 # here is the main call!
