@@ -79,7 +79,7 @@ def process_choice(choice):
         print("add transaction")
         amount = int(input("transaction amount: "))
         cat = input("transaction category: ")
-        date = input("transaction date: ")
+        date = input("transaction date (should be in the form 'yyyymmdd'): ")
         desc = input("transaction description: ")
         transac = {'amount':amount, 'category':cat, 'date':date, 'desc': desc}
         transactions.add(transac)
@@ -176,4 +176,3 @@ def print_summarize_by(items, col, var):
 
 # here is the main call!
 toplevel()
-

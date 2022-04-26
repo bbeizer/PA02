@@ -15,9 +15,9 @@ def empty_db(dbfile):
 @pytest.fixture
 def small_db(empty_db):
     ''' create a small database, and tear it down later'''
-    trans1 = {'amount': '25', 'category':'food', 'date': '20170120',  'description':'groceries and takeout'}
-    trans2 = {'amount': '63', 'category':'car', 'date': '20170125',  'description':'wash and new tire'}
-    trans3 = {'amount': '47', 'category':'fun', 'date': '20170130',  'description':'movies and dining out'}
+    trans1 = {'amount': '25', 'category':'food', 'date': '20170120',  'desc':'groceries and takeout'}
+    trans2 = {'amount': '63', 'category':'car', 'date': '20170125',  'desc':'wash and new tire'}
+    trans3 = {'amount': '47', 'category':'fun', 'date': '20170130',  'desc':'movies and dining out'}
     id1=empty_db.add(trans1)
     id2=empty_db.add(trans2)
     id3=empty_db.add(trans3)
@@ -36,7 +36,7 @@ def med_db(small_db):
         trans ={'amount':'amnt'+s,
                 'category':'cat'+s,
                 'date':'date'+s,
-                'description':'desc'+s
+                'desc':'desc'+s
                 }
         rowid = small_db.add(trans)
         rowids.append(rowid)
@@ -57,7 +57,7 @@ def test_to_trans_dict():
     assert a['amount']=='5'
     assert a['category']=='cat'
     assert a['date']=='19991203'
-    assert a['description']=='cucumber'
+    assert a['desc']=='cucumber'
     assert len(a.keys())==5
 
 
@@ -68,7 +68,7 @@ def test_add(med_db):
     trans0 = {'amount':'5',
             'category':'cat',
             'date':'19991203',
-            'description':'desc'
+            'desc':'yo yo yo my name is joe'
             }
     transactions0 = med_db.select_all()
     rowid = med_db.add(trans0)
@@ -78,7 +78,7 @@ def test_add(med_db):
     assert trans1['amount']==trans0['amount']
     assert trans1['category']==trans0['category']
     assert trans1['date']==trans0['date']
-    assert trans1['description']==trans0['date']
+    assert trans1['desc']==trans0['desc']
 
 @pytest.mark.delete
 def test_delete(med_db):
@@ -88,7 +88,7 @@ def test_delete(med_db):
 
     # then we add this transaction to the table and get the new list of rows
     trans0 = {'amount': '25', 'category':'testing_delete', 
-              'date': '20170120',  'description':'groceries and takeout'
+              'date': '20170120',  'desc':'groceries and takeout'
             }
     rowid = med_db.add(trans0)
     transactions1 = med_db.select_all()
@@ -107,12 +107,12 @@ def test_summarize_by_date(med_db):
     trans0 = {'amount':'testing_add',
             'category':'see if it works',
             'date':'19991203',
-            'description': 'this is a description'
+            'desc': 'this is a description'
             }
     rowid = med_db.add(trans0)
 
     # now we upate the transegory
-    trans1 = {'amount':'testing_add','category':'see if it works','date':'19990421','description':"this is a description"}
+    trans1 = {'amount':'testing_add','category':'see if it works','date':'19990421','desc':"this is a description"}
     med_db.update(rowid,trans1)
 
     # now we retrieve the transegory and check that it has changed
@@ -120,7 +120,7 @@ def test_summarize_by_date(med_db):
     assert trans0['amount']==trans1['amount']
     assert trans0['category']==trans1['category']
     assert trans0['date']==trans1['date']  
-    assert trans0['description']==trans1['description']  
+    assert trans0['desc']==trans1['desc']  
 
 
 def test_add(med_db):
@@ -129,7 +129,7 @@ def test_add(med_db):
     trans0 = {'amount':'testing add',
             'category':'see if it works',
             'date':'19991203',
-            'description': 'this is a description'
+            'desc': 'this is a description'
             }
     trans0 = med_db.select_all()
     rowid = med_db.add(trans0)
@@ -139,6 +139,6 @@ def test_add(med_db):
     assert trans1['amount']==trans0['amount']
     assert trans1['category']==trans0['category']
     assert trans1['date']==trans0['date']  
-    assert trans1['description']==trans0['description']      
+    assert trans1['desc']==trans0['desc']      
 
 
